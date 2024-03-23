@@ -15,6 +15,7 @@ import Signin from "./components/Signin/Signin"
 import Signup from "./components/Signup/Signup"
 import Signupform from './components/Studentsignupform/Signupform.jsx';
 // import StaffSignupform from './components/StaffSignupform/StaffSignupform.jsx';
+import Signpage from './components/Signpage/Signpage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +24,8 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="signin" element={<Signin />} />
       <Route path="signup" element={<Signup />} />
-      {/* <Route path ="signin/student" element={<Signupform/>} /> */}
+      <Route path ="signin/student" element={<Signpage/>} />
+      <Route path ="signin/staff" element={<Signpage/>} />
       <Route path ="signup/student" element={<Signupform/>} />
       <Route path ="signup/staff" element={<Signupform/>} />
       

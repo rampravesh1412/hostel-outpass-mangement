@@ -12,9 +12,10 @@ const Navbar = () => {
   return (
     <>
       {/*  Mobile view navigation menu */}
-      <div className="responsive-menu flex  bg-slate-950">
-        <button onClick={toggleMenu} className="menu-button">
-          <Menu />
+      <div className="responsive-menu flex justify-between   bg-slate-950">
+      <div className="menu-button"><img src={logo} alt="" width={35}/></div>
+        <button onClick={toggleMenu} className="menu-button font-bold">
+          <Menu className=""/>
         </button>
 
         {isMenuOpen && (
@@ -36,7 +37,7 @@ const Navbar = () => {
         )}
       </div>
       {/* Destop view */}
-      <div className="bg-slate-950 destop-view ">
+      <div className="bg-slate-950 destop-view py-4 ">
         <ul className="flex justify-around text-white">
           <li>
             <img src={logo} alt="collegeLogo" width={40} />

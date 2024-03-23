@@ -39,7 +39,7 @@ const Signupform = () => {
       <br/>
       </form>
       <div className='btn'>
-        <button className='bg-yellow-500 px-28 py-2 '>Create Account</button>
+        <button className='bg-yellow-500 px-20 py-2 rounded-lg'>Create Account</button>
       </div>
       <br/><br/>
     </div>
