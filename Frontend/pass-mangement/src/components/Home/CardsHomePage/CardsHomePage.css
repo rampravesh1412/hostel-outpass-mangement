@@ -1,0 +1,59 @@
+/* AnimatedCard.css */
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(45deg, red, yellow, green, blue) 1;
+  
+    
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+  }
+  
+  .card-front {
+    /* background-color: yellowgreen; */
+  }
+  
+  .card-back {
+    /* background-color: #2ecc71; */
+    transform: rotateY(180deg);
+    /* color: #fff; */
+    
+  }
+
+  /* .card-front div img , .card-back div img {
+    max-height: 50vh;
+    max-width: 100%;
+    
+    
+  } */
+ 
+  
+  /* Add additional styling as needed */
+  

@@ -1,0 +1,53 @@
+.responsive-menu {
+  position: relative;
+}
+
+.menu-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 100%;
+}
+
+.menu-items span {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  /* background-color: lightslategray; */
+}
+.destop-view {
+  display: none;
+}
+
+/* Add media query for responsiveness */
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none; /* Hide the button on larger screens */
+  }
+  .menu-items {
+    position: static;
+    display: flex;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .destop-view {
+    display: block;
+  }
+}
