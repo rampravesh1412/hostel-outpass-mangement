@@ -40,6 +40,7 @@ const studentRoutes = require("./routes/student.route.js");
 const staffRoutes = require("./routes/staff.route.js");
 const  studentPassRoutes = require('./routes/confirmPass.js')
 const  sendmailerRoutes = require('./routes/sendmailer.js')
+
 app.use("/api/v1/student", studentRoutes);
 app.use("/api/v1/staff", staffRoutes);
 app.use("/api/v1/student" ,studentPassRoutes )
